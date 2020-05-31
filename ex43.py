@@ -2,6 +2,12 @@ from sys import exit
 from random import randint
 from textwrap import dedent
 
+class Scene(object):
+
+    def enter(self):
+        pass
+
+
 class Engine(object):
 
     def __init__(self, scene_map):
@@ -22,7 +28,7 @@ class Death(Scene):
     quips = [
         "You died. You kinda suck at this.",
         "Your Mom would be proud...if she were smarter.",
-        "Such a luser.",
+        "Such a loser.",
         "I have a small puppy that's better at this.",
         "You're worse than your Dad's jokes."  
     ]
@@ -30,6 +36,7 @@ class Death(Scene):
     def enter(self):
         print(Death.quips[randint(0, len(self.quips)-1)])
         exit(1)
+
 
 
 class CentralCorridor(Scene):
@@ -105,7 +112,7 @@ class LaserWeaponArmory(Scene):
             the lock closes forever and you can't get the bomb. The
             code is 3 digits.
             """))
-        code = f"{randint(1,9)}{randint(1,9)}{randint(1,9)}"
+        code = f"{randint(1,2)}{randint(1,2)}{randint(1,2)}"
         guess = input("[keypad]> ")
         guesses = 0
 
@@ -186,11 +193,11 @@ class EscapePod(Scene):
             them could be damaged but you don't have time to look.
             There's 5 pods, which one do you take?
             """))
-        good_pod = randint(1,5)
+        good_pod = randint(1,1)
         guess = input("[pod #]> ")
 
         if int(guess) != good_pod:
-            print(dedent("""
+            print(dedent(f"""
                 You jump into pod {guess} and hit the eject button.
                 The pod escapes out into the void of space, then
                 implodes as the hull ruptures, crushing your body into
@@ -198,7 +205,7 @@ class EscapePod(Scene):
                 """))
             return 'death'
         else:
-            print(dedent("""
+            print(dedent(f"""
                 You jump into pod {guess} and hit the eject button.
                 The pod easily slides out into space heading to the
                 planet below. As it flies to the planet, you look
@@ -206,7 +213,7 @@ class EscapePod(Scene):
                 bright star, taking out the Gothon ship at the same
                 time. You won!
                 """))
-                return 'finished'
+            return 'finished'
 
 class Finished(Scene):
 
@@ -223,7 +230,7 @@ class Map(object):
         'the_bridge': TheBridge(),
         'escape_pod': EscapePod(),
         'death': Death(),
-        finished': Finished(),
+        'finished': Finished(),
     }
 
     def __init__(self, start_scene):

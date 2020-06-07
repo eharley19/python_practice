@@ -1,24 +1,33 @@
 from random import randint
 
-x = randint(1, 50)
 
-num = int(input("I'm thinking of a number between 1 and 50. Guess? "))
+x = randint(1, 1024)
 
-guesses = 0
+print("I'm thinking of a number between 1 and 1024.")
 
-while guesses < 9:
+prev_num = None
+
+guesses = 1
+
+while guesses < 11:
+    num = int(input("Guess: "))
+    if num == prev_num:
+        print("You've already guessed that.")
+        num = int(input("Guess again: "))
+        guesses -= 1
+        continue
+
     if num == x:
         print("You got it!")
         break
     elif num < x:
         print("Higher!")
-        guesses += 1
-        print("Number of times guessed: ", guesses)
-        num = int(input("Guess again: "))
+
     elif num > x:
         print("Lower!")
-        guesses += 1
-        print("Number of times guessed: ", guesses)
-        num = int(input("Guess again: "))
+
+    print("Number of times guessed: ", guesses)
+    prev_num = num
+    guesses += 1
 else:
     print("Sorry, you're out of guesses.")

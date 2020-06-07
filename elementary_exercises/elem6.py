@@ -6,12 +6,12 @@ product = 1
 
 tot = 0
 
-for i in range(1,list_length):
+for i in range(1, list_length):
     product *= i
     tot += i
 
 if choice == "Product":
-    print("The product is ",product)
+    print("The product is ", product)
 elif choice == "Sum":
     print("The sum is ", tot)
 else:

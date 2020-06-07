@@ -1,10 +1,12 @@
-bottom = 1
-top = 100
+primes = set()
+num = 2
 
-for num in range(bottom, top + 1):
-    if num > 1:
-        for i in range(2, num):
-            if num % i == 0:
-                break
-        else:
-            print(num)
+while True:
+
+    for prime in primes:
+        if num % prime == 0:
+            break
+        print(num)
+        primes.add(num)
+
+    num += 1

@@ -14,7 +14,6 @@ while guesses < 11:
     if num == prev_num:
         print("You've already guessed that.")
         num = int(input("Guess again: "))
-        guesses -= 1
         continue
 
     if num == x:

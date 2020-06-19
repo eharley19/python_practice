@@ -1,17 +1,12 @@
 def combine_lists(lst1, lst2):
     new_list = []
-    for i in range(len(lst1)):
-        for j in range(len(lst2)):
-            while i <= j:
-                new_list.append(lst1[i])
-                i += 1
-            else:
-                new_list.append(lst2[j])
-                j += 1
+    for elem1, elem2 in zip(lst1, lst2):
+        new_list.append(elem1)
+        new_list.append(elem2)
     return new_list
 
 
 a = ["h", "l", "o"]
 b = ["e", "l", " "]
 
-print(combine_lists(a, b))
+assert list("hello ") == combine_lists(a, b)

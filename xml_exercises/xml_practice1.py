@@ -10,8 +10,11 @@ data = session.get('https://www.reddit.com/r/NHKEasyNews/.rss')
 
 # pprint(data.text)
 
+# namespace dictionary
+ns = {'article': 'http://www.w3.org/2005/Atom'}
+
 root = ET.fromstring(data.text)
-entries = root.findall('{http://www.w3.org/2005/Atom}entry')
+entries = root.findall('article:entry', ns)
 # import pdb; pdb.set_trace()
 
 
@@ -19,4 +22,4 @@ print(f"There are {len(entries)} entries")
 
 for entry in entries:
     # import pdb; pdb.set_trace()
-    print(entry.find('{http://www.w3.org/2005/Atom}title').text)
+    print(entry.find('article:title', ns).text)

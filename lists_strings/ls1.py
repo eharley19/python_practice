@@ -4,11 +4,3 @@ def largest_elem(lst):
         if largest is None or largest < item:
             largest = item
     return largest
-
-
-
-
-        
-    
-
-

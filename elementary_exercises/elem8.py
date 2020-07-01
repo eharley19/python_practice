@@ -1,5 +1,5 @@
 primes = set()
-num = 2
+num = 50
 
 while True:
 

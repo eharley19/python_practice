@@ -17,9 +17,27 @@ root = ET.fromstring(data.text)
 entries = root.findall('article:entry', ns)
 # import pdb; pdb.set_trace()
 
+b = ''
 
 print(f"There are {len(entries)} entries")
 
 for entry in entries:
     # import pdb; pdb.set_trace()
-    print(entry.find('article:title', ns).text)
+    b += f"<p><a href='{entry.find('article:link', ns).attrib['href']}'>{entry.find('article:title', ns).text}</a></p>"
+
+a = f"""
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+    <body>
+    {b}
+    </body>
+</html>
+"""
+
+
+print(a)

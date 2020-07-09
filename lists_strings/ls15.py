@@ -80,45 +80,28 @@ def subtract_nums(num_lst1, num_lst2):
 
 
 def multiply_nums(num_lst1, num_lst2):
-    # create empty list for product
-    product = []
-    # obtain and store max_length of lists
-    max_length = max(len(num_lst1), len(num_lst2))
 
-    # while initial: offset equals 0 condition: offset is less than max_length change: offset increment + 1
-    offset = 0
-    while offset < max_length:
-        # i  is equal to the length of num_lst1 minus the offset
-        i = len(num_lst1) - offset - 1
-        # j is equal to the length of num_lst2 minus the offset
-        j = len(num_lst2) - offset - 1
-        # element1 is 1 if i is less than 0 else element1 is the ith element of num_lst1
-        element1 = 0 if i < 0 else num_lst1[i]
-        # element2 is 1 if j is less than 0 else element2 is the jth element of num_lst2
-        element2 = 0 if j < 0 else num_lst2[j]
-        # prod is the result of element1 multiplied by element2
-        prod = element1 * element2
-        # if prod is greater than nine:
-        if prod > 9:
-            # obtain modulus 10 of prod and set to mod
-            mod = prod % 10
-            # insert mod to the 0 index of product
-            product.insert(0, mod)
-            # quo is the result of dividing prod by 10 and convert to integer
-            quo = int(prod / 10)
-            # insert quo to the 0 index of product
-            product.insert(0, quo)
-        # else
-        else:
-            # insert prod to the 0 index of product
-            product.insert(0, prod)
-        offset += 1
-    # return product
-    return product
+    sub_products = []
+
+    for z, elem1 in enumerate(reversed(num_lst1)):
+        carry = 0
+        sub_products.append([0] * z)
+        for elem2 in reversed(num_lst2):
+            res = elem1 * elem2 + carry
+            res1 = res % 10
+            sub_products[-1].insert(0, res1)
+            carry = res // 10
+        if carry:
+            sub_products[-1].insert(0, carry)
+
+    sum = [0]
+    for sub_product in sub_products:
+        sum = add_num(sum, sub_product)
+    return sum
 
 
 def test_multiply_nums():
-    assert multiply_nums([5, 5, 5], [2, 1]) == [0, 1, 0, 5]
+    assert multiply_nums([5, 5, 5], [2, 1]) == [1, 1, 6, 5, 5]
     assert multiply_nums([1], [1]) == [1]
 
 

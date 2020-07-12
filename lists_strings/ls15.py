@@ -1,4 +1,4 @@
-def add_num(num_lst1, num_lst2):
+def add_num(num_lst1, num_lst2, base=10):
     # intitialize total to empty list
     total = []
     # carry_bit is equal to 0
@@ -22,9 +22,9 @@ def add_num(num_lst1, num_lst2):
         # set to new_sum to the  sum of element1 and element2 and carry_bit
         new_sum = element1 + element2 + carry_bit
         # if new_sum greater than 9
-        if new_sum > 9:
+        if new_sum > base - 1:
             # insert new_sum's last digit to index 0 of total
-            total.insert(0, new_sum % 10)
+            total.insert(0, new_sum % base)
             # carry_bit is equal to 1
             carry_bit = 1
 
@@ -35,8 +35,19 @@ def add_num(num_lst1, num_lst2):
             # carry_bit is equal to 0
             carry_bit = 0
         offset += 1
+    if carry_bit == 1:
+        total.insert(0, carry_bit)
     # return total
     return total
+
+
+def test_add_num():
+    assert add_num([1], [1]) == [2]
+    assert add_num([2, 3], [1]) == [2, 4]
+    assert add_num([1], [3, 2]) == [3, 3]
+    assert add_num([9], [2]) == [1, 1]
+    assert add_num([0], [1], 2) == [1]
+    assert add_num([3], [1, 1], 4) == [2, 0]
 
 
 def subtract_nums(num_lst1, num_lst2):
@@ -79,7 +90,7 @@ def subtract_nums(num_lst1, num_lst2):
     return difference
 
 
-def multiply_nums(num_lst1, num_lst2):
+def multiply_nums(num_lst1, num_lst2, base=10):
 
     sub_products = []
 
@@ -88,21 +99,36 @@ def multiply_nums(num_lst1, num_lst2):
         sub_products.append([0] * z)
         for elem2 in reversed(num_lst2):
             res = elem1 * elem2 + carry
-            res1 = res % 10
+            res1 = res % base
             sub_products[-1].insert(0, res1)
-            carry = res // 10
+            carry = res // base
         if carry:
             sub_products[-1].insert(0, carry)
 
     sum = [0]
     for sub_product in sub_products:
-        sum = add_num(sum, sub_product)
+        sum = add_num(sum, sub_product, base)
     return sum
+
+
+# a = ['a', 'b', 'c']
+# b = [1, 2, 3, 4]
+# c = [0]
+# d = []
+# e = [[0, 1], [3, 5, 6, 7], [8]]
+
+# multiply_nums(b, b)
+
+test_add_num()
 
 
 def test_multiply_nums():
     assert multiply_nums([5, 5, 5], [2, 1]) == [1, 1, 6, 5, 5]
+    assert multiply_nums([2, 1], [5, 5, 5]) == [1, 1, 6, 5, 5]
     assert multiply_nums([1], [1]) == [1]
+    assert multiply_nums([0], [1], 2) == [0]
+    assert multiply_nums([2], [4], 5) == [1, 3]
+    assert multiply_nums([1, 2], [2], 3) == [1, 0, 1]
 
 
 test_multiply_nums()

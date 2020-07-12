@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+    
+        <customer>
+            <firstName>Teresa</firstName>
+            <lastName>Rosales</lastName>
+            <balance>80396</balance>
+        </customer>
+    
+        <customer>
+            <firstName>James</firstName>
+            <lastName>Simmons</lastName>
+            <balance>55811</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Dawn</firstName>
+            <lastName>Allen</lastName>
+            <balance>76114</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Christopher</firstName>
+            <lastName>Singh</lastName>
+            <balance>57833</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Trevor</firstName>
+            <lastName>Anderson</lastName>
+            <balance>32738</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Crystal</firstName>
+            <lastName>Johnson</lastName>
+            <balance>56546</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Rodney</firstName>
+            <lastName>Marshall</lastName>
+            <balance>84496</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jon</firstName>
+            <lastName>Smith</lastName>
+            <balance>71901</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Amber</firstName>
+            <lastName>Lopez</lastName>
+            <balance>19181</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Drew</firstName>
+            <lastName>Ellis</lastName>
+            <balance>98961</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Christine</firstName>
+            <lastName>Martinez</lastName>
+            <balance>25271</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Alexis</firstName>
+            <lastName>Jones</lastName>
+            <balance>83647</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Dominique</firstName>
+            <lastName>Lambert</lastName>
+            <balance>39133</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jeffrey</firstName>
+            <lastName>Mcmillan</lastName>
+            <balance>9883</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Bridget</firstName>
+            <lastName>Phillips</lastName>
+            <balance>31308</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Adrian</firstName>
+            <lastName>Rush</lastName>
+            <balance>72471</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Lindsey</firstName>
+            <lastName>Morgan</lastName>
+            <balance>56001</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Holly</firstName>
+            <lastName>Valencia</lastName>
+            <balance>52435</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Linda</firstName>
+            <lastName>James</lastName>
+            <balance>66164</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Christopher</firstName>
+            <lastName>Cantu</lastName>
+            <balance>40000</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Sarah</firstName>
+            <lastName>Silva</lastName>
+            <balance>19218</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Christopher</firstName>
+            <lastName>Miller</lastName>
+            <balance>27113</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Mario</firstName>
+            <lastName>Nunez</lastName>
+            <balance>49404</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kristi</firstName>
+            <lastName>Perry</lastName>
+            <balance>6219</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Sean</firstName>
+            <lastName>Smith</lastName>
+            <balance>56363</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Donna</firstName>
+            <lastName>Jacobs</lastName>
+            <balance>78447</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jennifer</firstName>
+            <lastName>Ayala</lastName>
+            <balance>97426</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Deborah</firstName>
+            <lastName>Roberts</lastName>
+            <balance>92695</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Dustin</firstName>
+            <lastName>Meyer</lastName>
+            <balance>34868</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kim</firstName>
+            <lastName>Stuart</lastName>
+            <balance>59817</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Michael</firstName>
+            <lastName>Pugh</lastName>
+            <balance>61442</balance>
+        </customer>
+    
+        <customer>
+            <firstName>David</firstName>
+            <lastName>Diaz</lastName>
+            <balance>99167</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Patrick</firstName>
+            <lastName>Mcdaniel</lastName>
+            <balance>18603</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jill</firstName>
+            <lastName>Wright</lastName>
+            <balance>67373</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Roger</firstName>
+            <lastName>Hickman</lastName>
+            <balance>54769</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jennifer</firstName>
+            <lastName>Farrell</lastName>
+            <balance>95466</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Alejandro</firstName>
+            <lastName>Caldwell</lastName>
+            <balance>68192</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Michael</firstName>
+            <lastName>Phillips</lastName>
+            <balance>30955</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Tracy</firstName>
+            <lastName>Ramirez</lastName>
+            <balance>55622</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Dr.</firstName>
+            <lastName>Douglas</lastName>
+            <balance>39523</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Terry</firstName>
+            <lastName>Peters</lastName>
+            <balance>23280</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Russell</firstName>
+            <lastName>Howard</lastName>
+            <balance>92501</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Mark</firstName>
+            <lastName>Smith</lastName>
+            <balance>39552</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Ryan</firstName>
+            <lastName>Smith</lastName>
+            <balance>70899</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Tracy</firstName>
+            <lastName>Brown</lastName>
+            <balance>98030</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kimberly</firstName>
+            <lastName>Jensen</lastName>
+            <balance>55534</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Melanie</firstName>
+            <lastName>Lopez</lastName>
+            <balance>37482</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Tanya</firstName>
+            <lastName>Jackson</lastName>
+            <balance>56361</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Donald</firstName>
+            <lastName>Smith</lastName>
+            <balance>8470</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jason</firstName>
+            <lastName>Gonzales</lastName>
+            <balance>71180</balance>
+        </customer>
+    
+        <customer>
+            <firstName>John</firstName>
+            <lastName>Sanchez</lastName>
+            <balance>61043</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jaime</firstName>
+            <lastName>Cantu</lastName>
+            <balance>67000</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Ryan</firstName>
+            <lastName>Wright</lastName>
+            <balance>80642</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Paula</firstName>
+            <lastName>Smith</lastName>
+            <balance>95270</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kyle</firstName>
+            <lastName>Fox</lastName>
+            <balance>59370</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Mary</firstName>
+            <lastName>Simpson</lastName>
+            <balance>48617</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Catherine</firstName>
+            <lastName>Owen</lastName>
+            <balance>54601</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Heather</firstName>
+            <lastName>Robertson</lastName>
+            <balance>55524</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Vickie</firstName>
+            <lastName>Preston</lastName>
+            <balance>79558</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Diane</firstName>
+            <lastName>Gilbert</lastName>
+            <balance>38197</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Katherine</firstName>
+            <lastName>Wilson</lastName>
+            <balance>19386</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Terry</firstName>
+            <lastName>Welch</lastName>
+            <balance>18074</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Mr.</firstName>
+            <lastName>Larry</lastName>
+            <balance>30644</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Dennis</firstName>
+            <lastName>Nichols</lastName>
+            <balance>19961</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Christopher</firstName>
+            <lastName>Molina</lastName>
+            <balance>57136</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Paul</firstName>
+            <lastName>Sparks</lastName>
+            <balance>99072</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Michele</firstName>
+            <lastName>Gardner</lastName>
+            <balance>86818</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jodi</firstName>
+            <lastName>Hughes</lastName>
+            <balance>18340</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Charles</firstName>
+            <lastName>Bond</lastName>
+            <balance>94800</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Tracey</firstName>
+            <lastName>Bishop</lastName>
+            <balance>13604</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jason</firstName>
+            <lastName>Ward</lastName>
+            <balance>30672</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jesse</firstName>
+            <lastName>Griffin</lastName>
+            <balance>51699</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Lisa</firstName>
+            <lastName>Schaefer</lastName>
+            <balance>31043</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kristen</firstName>
+            <lastName>Larson</lastName>
+            <balance>53210</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Alyssa</firstName>
+            <lastName>Brooks</lastName>
+            <balance>94437</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Patricia</firstName>
+            <lastName>Morris</lastName>
+            <balance>83591</balance>
+        </customer>
+    
+        <customer>
+            <firstName>James</firstName>
+            <lastName>Romero</lastName>
+            <balance>93419</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Justin</firstName>
+            <lastName>Gray</lastName>
+            <balance>65008</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Donna</firstName>
+            <lastName>Sims</lastName>
+            <balance>20722</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Susan</firstName>
+            <lastName>Watson</lastName>
+            <balance>62880</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Paula</firstName>
+            <lastName>George</lastName>
+            <balance>51207</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Scott</firstName>
+            <lastName>Smith</lastName>
+            <balance>48693</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Michael</firstName>
+            <lastName>Estrada</lastName>
+            <balance>99160</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Patrick</firstName>
+            <lastName>Grant</lastName>
+            <balance>37864</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kristen</firstName>
+            <lastName>Chavez</lastName>
+            <balance>7454</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Jesse</firstName>
+            <lastName>Parker</lastName>
+            <balance>45104</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Victoria</firstName>
+            <lastName>Ochoa</lastName>
+            <balance>69881</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Janet</firstName>
+            <lastName>Henry</lastName>
+            <balance>22422</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Kenneth</firstName>
+            <lastName>Rodriguez</lastName>
+            <balance>17343</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Charles</firstName>
+            <lastName>Goodwin</lastName>
+            <balance>13073</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Rebecca</firstName>
+            <lastName>Smith</lastName>
+            <balance>42637</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Gerald</firstName>
+            <lastName>Hayes</lastName>
+            <balance>25150</balance>
+        </customer>
+    
+        <customer>
+            <firstName>William</firstName>
+            <lastName>Bray</lastName>
+            <balance>60357</balance>
+        </customer>
+    
+        <customer>
+            <firstName>David</firstName>
+            <lastName>Hardy</lastName>
+            <balance>78673</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Bryan</firstName>
+            <lastName>Smith</lastName>
+            <balance>93130</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Tracy</firstName>
+            <lastName>Johnson</lastName>
+            <balance>99396</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Cody</firstName>
+            <lastName>Yoder</lastName>
+            <balance>80897</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Briana</firstName>
+            <lastName>Wilson</lastName>
+            <balance>7379</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Adam</firstName>
+            <lastName>Collins</lastName>
+            <balance>17377</balance>
+        </customer>
+    
+        <customer>
+            <firstName>Laura</firstName>
+            <lastName>Allison</lastName>
+            <balance>84457</balance>
+        </customer>
+    
+</customers>

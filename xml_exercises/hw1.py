@@ -8,5 +8,5 @@ root = tree.getroot()
 books = root.findall('book')
 
 for book in books:
-    print(book[0].text)
+    print(book[0].atext)
     print(book[1].text)

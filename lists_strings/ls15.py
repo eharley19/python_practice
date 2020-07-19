@@ -50,7 +50,7 @@ def test_add_num():
     assert add_num([3], [1, 1], 4) == [2, 0]
 
 
-def subtract_nums(num_lst1, num_lst2):
+def subtract_nums(num_lst1, num_lst2, base=10):
     # create empty list for difference
     difference = []
     # intialize borrow_flag equal to 0
@@ -71,7 +71,7 @@ def subtract_nums(num_lst1, num_lst2):
         # if diff less than zero
         if diff < 0:
             # add 10 to diff
-            diff += 10
+            diff += base
             # borrow_flag is equal to 1
             borrow_flag = 1
             # insert diff to index 0 of difference
@@ -84,7 +84,7 @@ def subtract_nums(num_lst1, num_lst2):
             borrow_flag = 0
         offset += 1
     if borrow_flag == 1:
-        difference = [digit * -1 % 10 for digit in difference]
+        difference = [digit * -1 % base for digit in difference]
         difference.insert(0, "-")
     # return difference
     return difference

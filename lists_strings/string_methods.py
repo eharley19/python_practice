@@ -7,4 +7,4 @@ assert stringTest.strip() == "Go hang a salami, I'm a lasagna hog"
 assert stringTest.rstrip() == "  Go hang a salami, I'm a lasagna hog"
 assert stringTest.find("Go") == 2
 assert stringTest.replace("a", "e") == "  Go heng e selemi, I'm e lesegne hog  "
-assert stringTest. == ["Go", "hang", "a", "salami,", "I'm", "a", "lasagna", "hog"]
+assert stringTest.split() == ["Go", "hang", "a", "salami,", "I'm", "a", "lasagna", "hog"]
